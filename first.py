@@ -41,6 +41,9 @@ def inv_adjugate(A):
     adj = [[C[j][i] for j in range(n)] for i in range(n)]
     return [[adj[i][j]/d for j in range(n)] for i in range(n)], d
 
+def copyM(A):
+    return [r[:] for r in A]
+
 def inv_gj(A):
     n = len(A)
     M, B = copyM(A), I(n)
