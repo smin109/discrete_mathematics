@@ -90,7 +90,7 @@ def main():
         print("\n[비교] 하나 이상 없음 → 비교 불가")
     else:
         print("\n[비교] 동일한가? →", "예" if same(inv1, inv2) else "아니오")
-    print(f"\n참고 det(A) = {d:.6f}")
+    print(f"\n참고 det(A) = {d:.3f}")
 
 if __name__ == "__main__":
     main()
